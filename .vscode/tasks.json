@@ -3,19 +3,11 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++ build and run (C++17)",
-            "command": "g++",
-            "args": [
-                "-std=c++17",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
-                "&&",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
+            "label": "make",
+            "command": "make",
+            "args": ["${fileBasenameNoExtension}"],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": ["$gcc"],
             "group": {
