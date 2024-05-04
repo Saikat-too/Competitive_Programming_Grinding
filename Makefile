@@ -1,7 +1,7 @@
 # Set the compiler
 CXX = clang++
 # Set the compiler flags
-CXXFLAGS = -std=c++17 -Wall -Wextra -Wpedantic
+CXXFLAGS = -std=c++20 -Wall -Wextra -Wpedantic
 
 # Get the names of all the C++ files in the directory
 CPPSRC ?= $(wildcard *.cpp)
