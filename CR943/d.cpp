@@ -19,7 +19,7 @@ void solve(){
     for(int i = 1;i<=n;i++) cin >> p[i];
     for(int i = 1 ; i<=n;i++) cin >> a[i];
     
-    auto f = [&] (int i)  { /* it is always better to use labmda function and function in general a good practice migh do it frequently*/
+    auto f = [&] (int i)  { /* it is always better to use labmda function and function in general a good practice might do it frequently*/
         i64 sum = 0 , res=0;
         for(int j = 0;j<k and j<n ; j+=1 , i=p[i]){
             res  = max(res , sum + (i64)(k-j)*a[i]);
