@@ -1,6 +1,6 @@
 /*
   Saikat Singha 
-  11.05.2024
+  10.05.2024
 
 */
 
@@ -13,7 +13,15 @@ i64 MOD = 1e9+7;
 
 void solve(){
     
+   int n;
+   cin >> n;
+  
+  for(int i = 1;i<n-1;i++) cout << i << ' ' << i << '\n';
 
+  cout << n << ' ' << n-1 << '\n' << n << ' ' << n << '\n';
+
+  cout << '\n';
+  return ;
 }
 
 int main(){
@@ -23,4 +31,5 @@ int main(){
     cin >> t;
     while(t--) solve();
 
+    return 0 ;
 }
