@@ -1,6 +1,6 @@
 /*
   Saikat Singha 
-  10.05.2024
+  11.05.2024
 
 */
 
@@ -18,7 +18,6 @@ void solve(){
 
 int main(){
     cin.tie(nullptr);
-    cout.tie(nullptr);
     ios_base::sync_with_stdio(false);
     int t;
     cin >> t;
