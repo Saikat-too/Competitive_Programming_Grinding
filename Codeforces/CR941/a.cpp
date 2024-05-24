@@ -26,7 +26,7 @@ void solve(){
             ok = true;
             break;
         }
-    }
+    }       
     if(ok) cout << k-1 << '\n';
     else cout << n << '\n';
 
