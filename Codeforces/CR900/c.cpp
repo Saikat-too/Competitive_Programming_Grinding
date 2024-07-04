@@ -1,6 +1,6 @@
 /*
   Saikat Singha 
-  30.06.2024
+  4.7.2024
 
 */
 
@@ -13,6 +13,12 @@ i64 MOD = 1e9+7;
 
 void solve(){
     
+    i64 n , k , x ;
+    cin >> n >> k >> x ; 
+    if(x >= 1LL * k *(k+1)/2 && x <= 1LL * k * (n+n-k+1) /2   ) cout << "Yes" << '\n';
+    else cout << "No" << '\n';
+
+    return ; 
 
 }
 
