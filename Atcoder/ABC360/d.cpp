@@ -9,17 +9,32 @@ using namespace std;
 #define fi first
 #define se second
 
-typedef long long ll;
+typedef long long i64;
 typedef vector<int> vi;
-typedef vector<ll> vl;
+typedef vector<i64> vl;
 typedef pair<int, int> pii;
 
 const int MOD = 1e9 + 7;
 const int INF = 1e9;
-const ll LINF = 1e18;
+const i64 LINF = 1e18;
 
 void solve() {
-    // Your solution code goes here
+    i64 n , t ; 
+    cin >> n >> t ; 
+    string s ; 
+    cin >> s ; 
+    vector<int>a(n);
+    for(int i = 0 ; i < n ;i++) cin >> a[i];
+    vector<int>neg_dir, pos_dir; 
+    for(int i = 0 ; i<sz(s) ; i++){
+        if(s[i]=='0') neg_dir.push_back(a[i]);
+        else pos_dir.push_back(a[i]);
+    }
+    
+    sort(neg_dir.begin() , neg_dir.end());
+    sort(pos_dir.begin() , pos_dir.end());
+    
+
 }
 
 int main() {
