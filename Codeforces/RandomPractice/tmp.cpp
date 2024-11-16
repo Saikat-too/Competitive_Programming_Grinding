@@ -10,8 +10,6 @@ int main() {
   cin.tie(nullptr);
   int t;
   cin >> t;
-  while (t--)
+  for (int i = 0; i < t; i++)
     solve();
-
-  return 0;
 }
