@@ -6,18 +6,15 @@ int main(){
     ll n ;
     cin >> n ;
     vector<ll>a(n);
-    for(int i = 0 ; i < n ; i++) cin >> a[i];
-    ll count = 0LL , big = 1e9 ;
-    for(int i = 0 ; i < n-1 ; i++){
-        if(a[i] < a[i+1]) continue ;
-        else {
-            if(a[i] > big) continue ;
-            else{
-                big = a[i];
-                count+=1;
-            }
-        }
+    vector<ll>ind;
+    ind.assign(n+1 , 0);
+    for(ll i = 0 ; i < n ; i++) cin >> a[i];
+    ll res = 1LL  ;
+    for(ll i = 0  ; i < n ; i++) ind[a[i]] = i ;
+    for(ll i = 1 ;  i < n  ; i++){
+       // cout <<"ELements in loop : " <<  ind[n+1] << ' ' << ind[n] << '\n';
+        if(ind[i+1] < ind[i]) res+=1;
     }
-    cout << count << '\n';
+    cout << res << '\n';
     return 0 ;
 }
